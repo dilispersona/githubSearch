@@ -3,8 +3,9 @@ import {GithubService} from './services/github.service';
 
 
 @Component({
+    moduleId: module.id,
     selector: 'my-app',
-    template: `<h1>Hello Angular</h1> <profile><profile>`,
+    templateUrl: 'app.component.html',
     providers: [GithubService]
 })
 export class AppComponent { }
